@@ -11,6 +11,7 @@ body .qa {
 body .qa .TextTyping {
   font-size: 38px;
   margin-bottom: 10px;
+  animation-delay: 5s;
 }
 body .qa .TextTyping span {
   display: none;
