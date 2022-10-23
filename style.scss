@@ -1,20 +1,35 @@
 body {
-    //     font-family: 'Courier New', Courier, monospace;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
 
-
-    //     .qa {
-
-    //         display: flex;
-    //         justify-content: center;
-    //         flex-direction: column;
     .qa {
         text-align: center;
         margin-top: 100px;
         // margin-bottom: 10px;
 
-        p {
+        .TextTyping {
             font-size: 38px;
             margin-bottom: 10px;
+        }
+
+        .TextTyping span {
+            display: none;
+        }
+
+        /*文字列後ろの線の設定*/
+        .TextTyping::after {
+            content: "|";
+            animation: typinganime .9s ease infinite;
+        }
+
+        @keyframes typinganime {
+            from {
+                opacity: 0
+            }
+
+            to {
+                opacity: 1
+            }
         }
     }
 
@@ -65,7 +80,8 @@ body {
             right: 10%;
             // bottom: -80px;
 
-            z-index: 2;
+            // z-index: 2;
+            // 犬小屋から出てきてるように見える
         }
 
         .snoopyContents.hide {
