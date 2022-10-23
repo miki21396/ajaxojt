@@ -1,18 +1,43 @@
+@charset "UTF-8";
+body {
+  font-family: "Dancing Script", cursive;
+  font-family: "Fuzzy Bubbles", cursive;
+}
 body .qa {
   text-align: center;
   margin-top: 100px;
+  /*文字列後ろの線の設定*/
 }
-body .qa p {
+body .qa .TextTyping {
   font-size: 38px;
   margin-bottom: 10px;
+}
+body .qa .TextTyping span {
+  display: none;
+}
+body .qa .TextTyping::after {
+  content: "|";
+  animation: typinganime 0.9s ease infinite;
+}
+@keyframes typinganime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body .resbtnContents {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  position: relative;
 }
 body .resbtnContents img {
   width: 100px;
+  position: absolute;
+  bottom: 30px;
 }
 body .runBtn {
   display: flex;
@@ -45,7 +70,6 @@ body .runContents .snoopyHouse {
   height: auto;
   position: absolute;
   right: 10%;
-  z-index: 2;
 }
 body .runContents .snoopyContents.hide {
   display: flex;
@@ -58,15 +82,16 @@ body .runContents .snoopyContents.hide .snoopy img {
   height: auto;
 }
 body .runContents .snoopyContents.hide .snoopyTxt img {
-  transform: rotate(45deg);
+  transform: rotate(22deg);
   height: auto;
   position: absolute;
   top: -95px;
 }
 body .runContents .snoopyContents.hide .snoopyTxt p {
   position: absolute;
-  top: -70px;
-  left: 350px;
+  top: -44px;
+  left: 281px;
+  width: 200px;
 }
 body .runContents .snoopyContents {
   opacity: 1;
@@ -95,8 +120,8 @@ body .runContents .charlieContens.hide .charlieTxt img {
 }
 body .runContents .charlieContens.hide .charlieTxt p {
   position: relative;
-  top: -135px;
-  right: 50px;
+  top: -147px;
+  right: 74px;
 }
 body .runContents .charlieConten {
   opacity: 1;
