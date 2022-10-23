@@ -107,6 +107,12 @@ body .runContents .charlieConten {
   position: absolute;
   right: 30%;
 }
+body .runContents .snoopyTxt.hide img,
+body .runContents .charlieTx.hide img {
+  width: 300px;
+  height: auto;
+  z-index: -1;
+}
 body .runContents .snoopyTxt img,
 body .runContents .charlieTxt img {
   width: 300px;
