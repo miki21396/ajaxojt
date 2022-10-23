@@ -63,7 +63,8 @@ body .runContents {
   display: flex;
   align-items: flex-end;
   position: relative;
-  top: 333px;
+  top: 360px;
+  left: -280px;
 }
 body .runContents .snoopyHouse {
   width: 250px;
