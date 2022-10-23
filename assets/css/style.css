@@ -44,32 +44,62 @@ body .runContents .snoopyHouse {
   width: 250px;
   height: auto;
   position: absolute;
-  right: 5%;
+  right: 10%;
   z-index: 2;
 }
-body .snoopyContents.hide {
+body .runContents .snoopyContents.hide {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   position: absolute;
-  left: 10%;
+  left: 72%;
 }
-body .snoopyContents.hide .snoopy img {
+body .runContents .snoopyContents.hide .snoopy img {
   width: 250px;
   height: auto;
 }
-body .snoopyContents.hide .snoopyTxt img {
+body .runContents .snoopyContents.hide .snoopyTxt img {
   transform: rotate(45deg);
   height: auto;
   position: absolute;
   top: -95px;
 }
-body .snoopyContents.hide .snoopyTxt p {
+body .runContents .snoopyContents.hide .snoopyTxt p {
   position: absolute;
   top: -70px;
   left: 350px;
 }
-body .charlieContens.hide {
+body .runContents .snoopyContents {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 15%;
+}
+body .runContents .charlieContens.hide {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+}
+body .runContents .charlieContens.hide .charlieBrown img {
+  width: auto;
+  height: 320px;
+}
+body .runContents .charlieContens.hide .charlieTxt img {
+  transform: rotate(-25deg);
+  position: absolute;
+  top: -80px;
+  right: 200px;
+}
+body .runContents .charlieContens.hide .charlieTxt p {
+  position: relative;
+  top: -135px;
+  right: 50px;
+}
+body .runContents .charlieConten {
+  opacity: 1;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -77,27 +107,8 @@ body .charlieContens.hide {
   position: absolute;
   right: 30%;
 }
-body .charlieContens.hide .charlieBrown img {
-  width: auto;
-  height: 320px;
-}
-body .charlieContens.hide .charlieTxt img {
-  transform: rotate(-25deg);
-  position: absolute;
-  top: -80px;
-  right: 200px;
-}
-body .charlieContens.hide .charlieTxt p {
-  position: relative;
-  top: -135px;
-  right: 50px;
-}
-body .snoopyContents,
-body .charlieConten {
-  opacity: 1;
-}
-body .snoopyTxt img,
-body .charlieTxt img {
+body .runContents .snoopyTxt img,
+body .runContents .charlieTxt img {
   width: 300px;
   height: auto;
   z-index: -1;

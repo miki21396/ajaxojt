@@ -62,99 +62,106 @@ body {
             width: 250px;
             height: auto;
             position: absolute;
-            right: 5%;
+            right: 10%;
             // bottom: -80px;
 
             z-index: 2;
         }
-    }
+
+        .snoopyContents.hide {
+            // opacity: 0;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 72%;
+
+            .snoopy {
+                img {
+
+                    width: 250px;
+                    height: auto;
+                }
+            }
+
+            .snoopyTxt {
+                img {
+                    transform: rotate(45deg);
+                    height: auto;
+                    position: absolute;
+                    top: -95px;
+                }
+
+                p {
+                    position: absolute;
+                    top: -70px;
+                    left: 350px;
+                }
 
 
-
-    .snoopyContents.hide {
-        // opacity: 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: absolute;
-        left: 10%;
-
-        .snoopy {
-            img {
-
-                width: 250px;
-                height: auto;
             }
         }
 
-        .snoopyTxt {
-            img {
-                transform: rotate(45deg);
-                height: auto;
-                position: absolute;
-                top: -95px;
-            }
 
-            p {
-                position: absolute;
-                top: -70px;
-                left: 350px;
-            }
-
-
-        }
-    }
-
-
-
-
-    .charlieContens.hide {
-        // opacity: 0;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-end;
-        position: absolute;
-        right: 30%;
-
-        .charlieBrown {
-            img {
-
-                width: auto;
-                height: 320px;
-            }
+        .snoopyContents {
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: absolute;
+            left: 15%;
         }
 
+
+        .charlieContens.hide {
+            // opacity: 0;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            position: absolute;
+            right: 10%;
+
+            .charlieBrown {
+                img {
+
+                    width: auto;
+                    height: 320px;
+                }
+            }
+
+            .charlieTxt {
+                img {
+                    transform: rotate(-25deg);
+                    position: absolute;
+                    top: -80px;
+                    right: 200px;
+                }
+
+                p {
+                    position: relative;
+                    top: -135px;
+                    right: 50px;
+
+                }
+            }
+        }
+
+        .charlieConten {
+            opacity: 1;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            right: 30%;
+        }
+
+        .snoopyTxt,
         .charlieTxt {
             img {
-                transform: rotate(-25deg);
-                position: absolute;
-                top: -80px;
-                right: 200px;
+                width: 300px;
+                height: auto;
+                z-index: -1;
             }
-
-            p {
-                position: relative;
-                top: -135px;
-                right: 50px;
-
-            }
-        }
-    }
-
-    .snoopyContents,
-    .charlieConten {
-        opacity: 1;
-    }
-
-
-
-    .snoopyTxt,
-    .charlieTxt {
-        img {
-            width: 300px;
-            height: auto;
-            z-index: -1;
         }
     }
 
