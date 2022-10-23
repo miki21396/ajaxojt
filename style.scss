@@ -10,11 +10,21 @@ body {
     .qa {
         text-align: center;
         margin-top: 100px;
-        margin-bottom: 50px;
+        // margin-bottom: 10px;
 
         p {
             font-size: 38px;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .resbtnContents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 100px;
         }
     }
 
@@ -24,9 +34,18 @@ body {
         margin-bottom: 100px;
     }
 
+    .result {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
     button {
         text-align: center;
         border: 1px solid black;
+        border-radius: 5px;
         margin-left: 10px;
         margin-right: 10px;
         width: 150px;
@@ -35,52 +54,58 @@ body {
 
     .runContents {
         display: flex;
+        align-items: flex-end;
+        position: relative;
+        top: 333px;
 
         .snoopyHouse {
             width: 250px;
             height: auto;
             position: absolute;
             right: 5%;
-            bottom: -60px;
+            // bottom: -80px;
 
             z-index: 2;
         }
-
-        .snoopyContents.hide {
-            // opacity: 0;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            position: absolute;
-            left: 10%;
-
-            .snoopy{
-                img {
-        
-                    width: 250px;
-                    height: auto;
-                }
-            }
-
-            .snoopyTxt {
-                img {
-                    transform: rotate(45deg);
-                    height: auto;
-                    position: absolute;
-                    top: -95px;
-                }
-
-                p {
-                    position: absolute;
-                    top: -70px;
-                    left: 350px;
-                }
+    }
 
 
+
+    .snoopyContents.hide {
+        // opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: absolute;
+        left: 10%;
+
+        .snoopy {
+            img {
+
+                width: 250px;
+                height: auto;
             }
         }
 
+        .snoopyTxt {
+            img {
+                transform: rotate(45deg);
+                height: auto;
+                position: absolute;
+                top: -95px;
+            }
+
+            p {
+                position: absolute;
+                top: -70px;
+                left: 350px;
+            }
+
+
+        }
     }
+
+
 
 
     .charlieContens.hide {
@@ -94,7 +119,7 @@ body {
 
         .charlieBrown {
             img {
-    
+
                 width: auto;
                 height: 320px;
             }
@@ -108,14 +133,13 @@ body {
                 right: 200px;
             }
 
-            p{
+            p {
                 position: relative;
                 top: -135px;
                 right: 50px;
-                
+
             }
         }
-
     }
 
     .snoopyContents,
@@ -123,7 +147,7 @@ body {
         opacity: 1;
     }
 
-   
+
 
     .snoopyTxt,
     .charlieTxt {
@@ -134,4 +158,5 @@ body {
         }
     }
 
-} // ここが最後
+    // ここが最後
+}
