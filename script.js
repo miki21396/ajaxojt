@@ -1,6 +1,6 @@
 $(function () {
 
-    const types = {"education":'./img/Woodstock.PNG'}//, "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"}
+    const types = {"education":'./img/Woodstock.PNG'},{"recreational":''},{"diy":''},{"cooking":''},{"relaxation":''},{"music":''},{"busywork":''};
 
 	$('.resbtn').on('click', function () {
 		// let result = $('input').val();
