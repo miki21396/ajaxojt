@@ -24,15 +24,18 @@ $(function () {
 
     })
 
-    $('.yes').click(function () {
-        $('.charlieContens').show(1500);
+	$('.yes').click(function () {
+        $('.charlieContens').removeClass('hide');
+        // $('.charlieContens').show(1500);
         $(".no").prop("disabled", true);
     });
 
-    $('.no').click(function () {
-        $('.snoopyContents').show(1500);
+    $('.no').on('click',function () {
+        $('.snoopyContents').removeClass('hide');
+        // $('#character').show(1500);
         $(".yes").prop("disabled", true);
     });
+
 
     // TextTypingというクラス名がついている子要素（span）を表示から非表示にする定義
 function TextTypingAnime() {
