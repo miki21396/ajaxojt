@@ -3,14 +3,25 @@ body {
   font-family: "Dancing Script", cursive;
   font-family: "Fuzzy Bubbles", cursive;
 }
+body .bg {
+  background-image: url(../../img/charliebrown.PNG);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
 body .qa {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
   /*文字列後ろの線の設定*/
 }
 body .qa .TextTyping {
   font-size: 38px;
   margin-bottom: 10px;
+  animation-delay: 5s;
 }
 body .qa .TextTyping span {
   display: none;
@@ -31,20 +42,23 @@ body .resbtnContents {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 90px;
+  position: relative;
 }
 body .resbtnContents img {
   width: 100px;
+  position: absolute;
+  bottom: 30px;
 }
 body .runBtn {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
 }
 body .result {
   font-size: 25px;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 body button {
   text-align: center;
@@ -59,7 +73,7 @@ body .runContents {
   display: flex;
   align-items: flex-end;
   position: relative;
-  top: 333px;
+  top: 60px;
 }
 body .runContents .snoopyHouse {
   width: 250px;
@@ -68,74 +82,58 @@ body .runContents .snoopyHouse {
   right: 10%;
 }
 body .runContents .snoopyContents.hide {
+  opacity: 0;
   display: flex;
-  align-items: center;
-  position: absolute;
-  left: 72%;
-}
-body .runContents .snoopyContents.hide .snoopy img {
-  width: 250px;
-  height: auto;
-}
-body .runContents .snoopyContents.hide .snoopyTxt img {
-  transform: rotate(45deg);
-  height: auto;
-  position: absolute;
-  top: -95px;
-}
-body .runContents .snoopyContents.hide .snoopyTxt p {
-  position: absolute;
-  top: -70px;
-  left: 350px;
+  transform: translateX(1040px);
 }
 body .runContents .snoopyContents {
   opacity: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  transform: translateX(300px);
+  transition: all 2s ease;
+}
+body .runContents .snoopy img {
+  width: 250px;
+  height: auto;
+}
+body .runContents .snoopyTxt img {
+  transform: rotate(35deg);
   position: absolute;
-  left: 15%;
+  top: -60px;
+}
+body .runContents .snoopyTxt p {
+  position: absolute;
+  top: -20px;
+  left: 305px;
+  width: 180px;
 }
 body .runContents .charlieContens.hide {
+  opacity: 0;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  position: absolute;
-  right: 10%;
+  transform: translateX(800px);
 }
-body .runContents .charlieContens.hide .charlieBrown img {
+body .runContents .charlieContens {
+  opacity: 1;
+  transform: translateX(550px);
+  transition: all 1.5s ease;
+}
+body .runContents .charlieBrown img {
   width: auto;
-  height: 320px;
+  height: 330px;
 }
-body .runContents .charlieContens.hide .charlieTxt img {
+body .runContents .charlieTxt img {
   transform: rotate(-25deg);
   position: absolute;
-  top: -80px;
+  top: -35px;
   right: 200px;
 }
-body .runContents .charlieContens.hide .charlieTxt p {
-  position: relative;
-  top: -135px;
-  right: 50px;
-}
-body .runContents .charlieConten {
-  opacity: 1;
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: flex-end;
+body .runContents .charlieTxt p {
   position: absolute;
-  right: 30%;
+  top: 30px;
+  right: 210px;
+  width: 200px;
 }
-body .runContents .snoopyTxt.hide img,
-body .runContents .charlieTx.hide img {
-  width: 300px;
+body .runContents .charlieTxt {
+  width: 250px;
   height: auto;
-  z-index: -1;
-}
-body .runContents .snoopyTxt img,
-body .runContents .charlieTxt img {
-  width: 300px;
-  height: auto;
-  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
