@@ -3,6 +3,16 @@ body {
   font-family: "Dancing Script", cursive;
   font-family: "Fuzzy Bubbles", cursive;
 }
+body .bg {
+  background-image: url(../../img/charliebrown.PNG);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
 body .qa {
   text-align: center;
   margin-top: 30px;

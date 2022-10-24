@@ -1,6 +1,6 @@
 $(function () {
 
-    const types = {"education":'../../img/Woodstock.PNG'}//, "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"}
+    const types = {"education":'./img/Woodstock.PNG'}//, "recreational", "social", "diy", "charity", "cooking", "relaxation", "music", "busywork"}
 
 	$('.resbtn').on('click', function () {
 		// let result = $('input').val();
@@ -14,7 +14,7 @@ $(function () {
 			.done(function (response) {
 				$('.result').append(response.activity);
 				$('.bg').css({
-					'background-image': `url(${types['education']})`
+					'background-image': `url(${types[response.type]})`
 				})
 				console.log(response.type); //タイプの文字が取れてる
 				console.log(types['education']); //3行目取れてる
