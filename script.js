@@ -32,13 +32,17 @@ $(function () {
 	})
 
 	$('.yes').click(function () {
-		$('.charlieContens').removeClass('hide');
+		$('.charlieContens').removeClass('hide'),
+		$('.house1').removeClass('hide'),
+		$('.house2').addClass('hide');
 		// $('.charlieContens').show(1500);
 		$(".no").prop("disabled", true);
 	});
 
 	$('.no').on('click', function () {
-		$('.snoopyContents').removeClass('hide');
+		$('.snoopyContents').removeClass('hide'),
+		$('.house1').removeClass('hide'),
+		$('.house2').addClass('hide');
 		// $('#character').show(1500);
 		$(".yes").prop("disabled", true);
 	});

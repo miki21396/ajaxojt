@@ -11,7 +11,7 @@ body .bg {
   height: 100vh;
   width: 100%;
   z-index: -1;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 body .qa {
   text-align: center;
@@ -73,7 +73,6 @@ body button {
   width: 150px;
   height: 40px;
   cursor: pointer;
-  color: #333;
   font-weight: bold;
   background: #fff;
   border: 3px solid #333;
@@ -93,10 +92,24 @@ body .runContents {
   top: 60px;
 }
 body .runContents .snoopyHouse {
-  width: 250px;
+  width: 280px;
   height: auto;
   position: absolute;
   right: 10%;
+}
+body .runContents .snoopyHouse .house1.hide {
+  opacity: 0;
+  position: absolute;
+}
+body .runContents .snoopyHouse .house1 {
+  opacity: 1;
+  position: absolute;
+  top: 60px;
+  width: 250px;
+  height: auto;
+}
+body .runContents .snoopyHouse .house2.hide {
+  opacity: 0;
 }
 body .runContents .snoopyContents.hide {
   opacity: 0;
