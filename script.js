@@ -1,7 +1,7 @@
 $(function () {
 
-    const types = {"education":'./img/Woodstock.PNG'},{"recreational":''},{"diy":''},{"cooking":''},{"relaxation":''},{"music":''},{"busywork":''};
-
+    const types = {"education":'./img/snoopyeducation.PNG',"recreational":'./img/snoopyrecreational.PNG',"diy":'./img/snoopydiy.png',"cooking":'./img/snoopycooking.png',"relaxation":'./img/snoopyrelaxation.svg',"music":'./img/snoppymusic.png',"busywork":'./img/snoopybusywork.jpeg',"social":'./img/snoopy-social.jpeg',"charity":'./img/snoopy-charity.png'};
+	
 	$('.resbtn').on('click', function () {
 		// let result = $('input').val();
 
