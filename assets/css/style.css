@@ -4,7 +4,6 @@ body {
   font-family: "Fuzzy Bubbles", cursive;
 }
 body .bg {
-  background-image: url(../../img/charliebrown.PNG);
   background-position: center;
   position: fixed;
   top: 0;
