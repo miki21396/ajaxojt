@@ -1,7 +1,7 @@
 $(function () {
 
-    const types = {"education":'./img/snoopyeducation.PNG',"recreational":'./img/snoopyrecreational.PNG',"diy":'./img/snoopydiy.png',"cooking":'./img/snoopycooking.png',"relaxation":'./img/snoopyrelaxation.svg',"music":'./img/snoppymusic.png',"busywork":'./img/snoopybusywork.jpeg',"social":'./img/snoopy-social.jpeg',"charity":'./img/snoopy-charity.png'};
-	
+	const types = { "education": './img/snoopyeducation.PNG', "recreational": './img/snoopyrecreational.PNG', "diy": './img/snoopydiy.png', "cooking": './img/snoopycooking.png', "relaxation": './img/snoopyrelaxation.svg', "music": './img/snoppymusic.png', "busywork": './img/snoopybusywork.jpeg', "social": './img/snoopy-social.jpeg', "charity": './img/snoopy-charity.png' };
+
 	$('.resbtn').on('click', function () {
 		// let result = $('input').val();
 
@@ -33,18 +33,21 @@ $(function () {
 
 	$('.yes').click(function () {
 		$('.charlieContens').removeClass('hide'),
-		$('.house1').removeClass('hide'),
-		$('.house2').addClass('hide');
+			$('.house1').removeClass('hide'),
+			$('.house2').addClass('hide');
 		// $('.charlieContens').show(1500);
 		$(".no").prop("disabled", true);
+		$('.refresh').fadeIn(1000);
 	});
 
 	$('.no').on('click', function () {
 		$('.snoopyContents').removeClass('hide'),
-		$('.house1').removeClass('hide'),
-		$('.house2').addClass('hide');
+			$('.house1').removeClass('hide'),
+			$('.house2').addClass('hide');
 		// $('#character').show(1500);
 		$(".yes").prop("disabled", true);
+		$('.refresh').fadeIn(1000);
+
 	});
 
 
